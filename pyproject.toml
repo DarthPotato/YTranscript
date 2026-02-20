@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "ytranscript"
+version = "0.1.0"
+description = "Download YouTube video transcripts from playlists or individual videos."
+requires-python = ">=3.10"
+dependencies = [
+    "yt-dlp>=2024.0",
+    "youtube-transcript-api>=1.0.0",
+]
+
+[project.scripts]
+ytranscript = "ytranscript.cli:main"
